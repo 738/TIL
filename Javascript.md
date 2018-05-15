@@ -1,8 +1,39 @@
-# 동치 비교 및 동일성
+# Equality comparisons and sameness
 
-- 2018.05.15
-- written by Jon Jee
+* 2018.05.15
+* Written by Jon Jee
+
+#javascript
+#typescript
+#troubleshooting
 
 ## General
 
-> 코딩을 하던 도중, 배열 안에 값이 있으면 true를 줘야할 상황이 있어서 bool: Boolean = !!array
+> When I was coding, there was a situation that if an array has values, it will return true. So I write like this `bool = !!array`. But, unexpectedly when `array = []`, `bool` is `false`, not `true`.
+
+## Why?
+
+* First, I thought if empty `string` or empty `Array` is parsed to `Boolean`, it must return `false`.
+* But it is not.
+
+```
+> Boolean('')
+false
+> Boolean([])
+true
+```
+* The result is like this, so I thought `''` is `false`, `[]` is `true`.
+
+```
+> '' == false
+true
+> [] == false
+true
+```
+* But here, the result is `''` is `false`(of course), `[]` is `false` too.
+
+
+
+
+
+
