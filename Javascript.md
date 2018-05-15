@@ -5,4 +5,4 @@
 
 ## General
 
-> 코딩을 하던 도중, 배열 안에 값이 있으면 true를 줘야할 상황이 있어서 bool: Boolean = !!arr
+> 코딩을 하던 도중, 배열 안에 값이 있으면 true를 줘야할 상황이 있어서 bool: Boolean = !!array
