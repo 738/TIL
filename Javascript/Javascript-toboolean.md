@@ -42,6 +42,7 @@ true
 * In Loose Equality, `[]` is `Object`, and `false` is `Boolean`. So in the table, it is applied that `ToPrimitive([]) == ToNumber(false)` and recursively `ToNumber("") === 0`. Eventually, it returns true.
 * I certainly realized when I saw this table. plz memorize it.
 
+#### toBoolean Table
 |Argument Type|Result|
 |:------------:|:------:|
 |`undefined`|`false`|
