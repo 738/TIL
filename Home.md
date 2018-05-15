@@ -6,6 +6,10 @@
 
 ### Node.js
 
+### ECMAScript
+
+- [In JS, is an empty `Array` return `false` or `true`?](/Javascript/Javascript-toboolean)
+
 ## Blockchain
 
 ### Nebulas
