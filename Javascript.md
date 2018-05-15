@@ -1,4 +1,4 @@
-# Equality comparisons and sameness
+# In JS, is an empty `Array` return `false` or `true`?
 
 * 2018.05.15
 * Written by Jon Jee
@@ -16,21 +16,28 @@
 * First, I thought if empty `string` or empty `Array` is parsed to `Boolean`, it must return `false`.
 * But it is not.
 
-```
-> Boolean('')
+```javascript
+// Conversion
+> Boolean("")
 false
 > Boolean([])
 true
+// Implied Conversion
+> !!""
+false
+> !![]
+true
 ```
-* The result is like this, so I thought `''` is `false`, `[]` is `true`.
+* In Conversion, The result is like this, so I thought `''` is `false`, `[]` is `true`.
 
-```
-> '' == false
+```javascript
+// Abstract Equality
+> "" == false
 true
 > [] == false
 true
 ```
-* But here, the result is `''` is `false`(of course), `[]` is `false` too.
+* But here in Straight Equality, the result is `''` is `false`(of course), `[]` is `false` too.
 
 
 
