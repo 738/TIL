@@ -43,7 +43,7 @@ true
 * I certainly realized when I saw this table. plz memorize it.
 
 |Argument Type|Result|
-|-------------|------|
+|:------------:|:------:|
 |`undefined`|`false`|
 |`null`|`false`|
 |`boolean`|same as input|
