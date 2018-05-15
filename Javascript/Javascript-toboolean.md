@@ -51,11 +51,6 @@ true
 |`string`|empty string -> `false`, otherwise -> `true`|
 |`object`|`true`|
 
-
-
-
-
-
 #### reference
 * [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 * [Is A JavaScript Empty Array Falsey Or Not?](https://codepen.io/arosenb2/post/is-a-javascript-empty-array-falsey-or-not)
