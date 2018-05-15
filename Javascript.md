@@ -57,8 +57,8 @@ true
 
 
 #### reference
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
-* https://codepen.io/arosenb2/post/is-a-javascript-empty-array-falsey-or-not
-* https://tc39.github.io/ecma262/#sec-toboolean
+* [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+* [Is A JavaScript Empty Array Falsey Or Not?](https://codepen.io/arosenb2/post/is-a-javascript-empty-array-falsey-or-not)
+* [toBoolean Table](https://tc39.github.io/ecma262/#sec-toboolean)
 
 
