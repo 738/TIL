@@ -31,16 +31,34 @@ true
 * In Conversion, The result is like this, so I thought `''` is `false`, `[]` is `true`.
 
 ```javascript
-// Abstract Equality
+// Loose Equality
 > "" == false
 true
 > [] == false
 true
 ```
-* But here in Straight Equality, the result is `''` is `false`(of course), `[]` is `false` too.
+* But here in Loose Equality, the result is `''` is `false`(of course), `[]` is `false` too.
+* I found a doc about this. [Equality comparisons and sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+* In Loose Equality, `[]` is `Object`, and `false` is `Boolean`. So in the table, it is applied that `ToPrimitive([]) == ToNumber(false)` and recursively `ToNumber("") === 0`. Eventually, it returns true.
+* I certainly realized when I saw this table. plz memorize it.
+
+|Argument Type|Result|
+|-------------|------|
+|`undefined`|`false`|
+|`null`|`false`|
+|`boolean`|same as input|
+|`number`|`+0`, `-0`, `NaN` -> `false`, otherwise -> `true`|
+|`string`|empty string -> `false`, otherwise -> `true`|
+|`object`|`true`|
 
 
 
 
+
+
+#### reference
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
+* https://codepen.io/arosenb2/post/is-a-javascript-empty-array-falsey-or-not
+* https://tc39.github.io/ecma262/#sec-toboolean
 
 
