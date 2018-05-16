@@ -13,7 +13,7 @@
 
 ## Why?
 
-* First, I thought if empty `string` or empty `Array` is parsed to `Boolean`, it must return `false`.
+* First, I thought if empty `string` or empty `Array` is conversed to `Boolean`, it must return `false`.
 * But it is not.
 
 ```javascript
@@ -53,7 +53,7 @@ true
 |`object`|`true`|
 
 ### Conclusion
-* Because `Array` is type of `object`, the fact that an empty `Array` is parsed to `true` is correct.
+* Because `Array` is type of `object`, the fact that an empty `Array` is conversed to `true` is correct.
 * But in Loose Equality, `[] == false` is right.
 * So, above `bool = !!array` code can be changed `bool = array == false`.
 * Or, you can make function that checks `array === undefined` or `array.length === 0`.
