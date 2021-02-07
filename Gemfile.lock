@@ -38,7 +38,7 @@ GEM
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     posix-spawn (0.3.13)
-    rack (1.6.10)
+    rack (1.6.13)
     rack-protection (1.5.5)
       rack
     rouge (2.2.1)
